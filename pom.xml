@@ -11,7 +11,7 @@
     <!-- set the version for camunda BPM here -->
     <version.camunda>7.10.0</version.camunda>
     <version.junit>4.11</version.junit>
-    <version.h2>1.4.190</version.h2>
+    <version.sqlserver>4.0</version.sqlserver>
     
     <!-- set the java version here -->
     <version.java>1.7</version.java>
@@ -107,10 +107,9 @@
 
     <!-- database -->
     <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
-      <scope>provided</scope>
-      <version>${version.h2}</version>
+      <groupId>com.microsoft.sqlserver</groupId>
+      <artifactId>sqljdbc4</artifactId>
+      <version>${version.sqlserver}</version>
     </dependency>
 
   </dependencies>

@@ -6,10 +6,10 @@
 
   <bean id="processEngineConfiguration" class="org.camunda.bpm.engine.impl.cfg.StandaloneInMemProcessEngineConfiguration">
 
-    <property name="jdbcUrl" value="jdbc:h2:mem:camunda;DB_CLOSE_DELAY=1000" />
-    <property name="jdbcDriver" value="org.h2.Driver" />
-    <property name="jdbcUsername" value="sa" />
-    <property name="jdbcPassword" value="" />
+    <property name="jdbcUrl" value="jdbc:sqlserver://localhost:1433;databaseName=process-engine" />
+    <property name="jdbcDriver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+    <property name="jdbcUsername" value="test" />
+    <property name="jdbcPassword" value="test" />
 
     <!-- Database configurations -->
     <property name="databaseSchemaUpdate" value="true" />
