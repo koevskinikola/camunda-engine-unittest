@@ -19,6 +19,8 @@
 
     <property name="history" value="full" />
 
+    <property name="skipHistoryOptimisticLockingExceptions" value="false" />
+
     <!-- <property name="customPostBPMNParseListeners">
       <list>
         <bean class="org.camunda.bpm.engine.impl.bpmn.parser.FoxFailedJobParseListener" />
